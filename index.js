@@ -51,3 +51,21 @@ var app7 = new Vue({
     ]
   }
 })
+
+
+var app8 = new Vue({
+    el: '#app-8',
+    data: {
+      message: 'Hello World'
+    },
+    methods: {
+      reverse: function () {
+        var str = ""
+        var rev = this.message.split(" ")
+        for(var i = rev.length - 1; i >= 0; i--) {
+            str = str + " " + rev[i]
+        }
+        this.message = str
+      }
+    }
+  })

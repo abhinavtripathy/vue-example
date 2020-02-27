@@ -31,6 +31,12 @@
           ></todo-item>
         </ol>
       </div>
+
+      <div id="app-8">
+        <input v-model="message">
+        <p>{{ message }}</p>
+        <button v-on:click="reverse">Reverse Message</button>
+      </div>
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
